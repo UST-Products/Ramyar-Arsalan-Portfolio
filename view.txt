@@ -1,0 +1,20 @@
+CREATE VIEW companyinvoiceitemsview AS 
+SELECT 
+products.ku_name AS 'products_ku_name',products.ar_name AS 'products_ar_name',products.en_name AS 'products_en_name',
+companyinvoices.invoicenumber,companyinvoices.invoicetype,companyinvoices.date,companyinvoices.note,companyinvoices.company,companyinvoices.currency,
+companies.name AS 'company_name',companies.phone AS 'company_phone',
+
+currencies.ku_name AS 'currencies_ku_name',currencies.ar_name AS 'currencies_ar_name',currencies.en_name AS 'currencies_en_name',
+currencies.symbol AS 'currencies_sybmol',
+currencies.price AS 'currencies_price',
+
+invoicetypes.ku_name AS 'invoicetypes_ku_name',invoicetypes.ar_name AS 'invoicetypes_ar_name',invoicetypes.en_name AS 'invoicetypes_en_name',
+companyinvoiceitems.* 
+FROM companyinvoiceitems 
+INNER JOIN products ON companyinvoiceitems.product=products.id 
+INNER JOIN companyinvoices ON companyinvoiceitems.companyinvoice=companyinvoices.id 
+INNER JOIN companies ON companyinvoices.company=companies.id 
+INNER JOIN currencies ON companyinvoices.currency=currencies.id 
+INNER JOIN invoicetypes ON companyinvoices.invoicetype=invoicetypes.id 
+
+

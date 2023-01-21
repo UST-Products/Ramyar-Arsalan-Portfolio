@@ -1,0 +1,329 @@
+/* theme */
+
+   /* body  background */
+
+   .theme--light .client {
+    background: #EEEDF7 !important;
+  }
+
+  .theme--dark .client {
+    background:#191919 !important;
+  }
+
+  /* dialog header or sheet */
+  .theme--light .v-toolbar .v-sheet {
+    background-color: #ffffff !important;
+}
+
+  .theme--dark .v-toolbar .v-sheet {
+    background: #333333 !important;
+}
+
+/* custom */
+
+.theme--dark .client .bodyColorTheme{
+    background: #191919 !important;
+}
+.theme--light .client .bodyColorTheme{
+    background: #EEEDF7 !important;
+}
+
+
+.theme--dark .client .bg_mode{
+    background: #333333 !important;
+}
+.theme--light .client .bg_mode{
+    background: #ffffff !important;
+}
+
+.theme--dark .client .color_mode{
+    color: #ffffff !important;
+}
+.theme--light .client .color_mode{
+    color: #0a0a0a !important;
+}
+
+
+
+ .theme--dark .client  .v-list {
+    background: #333333 !important;
+}
+
+
+/* readmore */
+.theme--light .hide-text[data-v-72c03b2a] {
+background: rgba(255, 255, 255, 0.467) !important;
+}
+.theme--dark .hide-text[data-v-72c03b2a] {
+background: #2e36519b !important;
+}
+
+.read-more-button[data-v-72c03b2a]{
+    border: none !important;
+}
+
+.read-more-button span{
+    background: transparent !important;
+    /* float: right !important; */
+}
+
+
+/* dialog */
+.theme--dark .v-toolbar.v-sheet {
+ background-color: #333333 !important;
+}
+.theme--light .v-toolbar.v-sheet {
+ background-color: #EEEDF7 !important;
+}
+
+/* card */
+.theme--dark .dialog_card {
+    background-color:#333333 !important;
+}
+.theme--light .dialog_card {
+    background-color:#EEEDF7 !important;
+}
+
+.theme--dark  .v-list-dialog {
+    background: #333333 !important;
+}
+.theme--light  .v-list-dialog {
+    background: #EEEDF7 !important;
+}
+
+
+/* mdi */
+.theme--light  .back_btn_post .v-btn__content .mdi{
+    color: #333333 !important;
+}
+.theme--dark  .back_btn_post .v-btn__content .mdi{
+    color: #EEEDF7 !important;
+}
+
+
+
+/* v-chip */
+.theme--light .v-chip-group .v-chip--active {
+    background: #1859DB !important;
+    color: white !important;
+}
+.theme--light .v-chip-group .v-chip--active .v-icon{
+    color: white !important;
+}
+.theme--dark.v-chip:not(.v-chip--active){
+    background: #51586E !important;
+}
+.theme--dark.v-chip:not(.v-chip--active) .v-icon{
+    color: white !important;
+}
+
+
+.theme--dark .v-chip-group .v-chip--active {
+    background: #1859DB !important;
+    color: white !important;
+}
+
+.theme--dark .v-chip-group .v-chip--active .v-icon{
+    color: white !important;
+}
+
+
+
+/* bottom navigation chips */
+.v-item-group.v-bottom-navigation .v-btn.v-btn--active{
+    background: transparent !important;
+}
+.v-item-group.v-bottom-navigation .v-btn.v-btn--active .chip-nav:not(.v-chip--active){
+background:#1859DB !important;
+color: white !important;
+}
+.v-item-group.v-bottom-navigation .v-btn.v-btn--active .chip-nav:not(.v-chip--active) .v-icon{
+color: white !important;
+}
+
+
+
+.create_post_text_bottom{
+    color: #1e1e2f !important;
+}
+.v-bottom-navigation .v-btn::before{
+    background:transparent !important;
+    display:none !important;
+}
+.v-bottom-navigation .v-btn::after{
+    display:none !important;
+}
+
+
+
+/* chip create post */
+
+.theme--dark  .chips_color{
+    color: #ffffff !important;
+}
+.theme--light  .chips_color{
+    color: #0a0a0a !important;
+}
+
+.chips_color .v-icon{
+    position: relative;
+    top:-2px !important;
+}
+
+
+/* footer */
+.client-footer .iconColor{
+    color: #EEEDF7 !important; 
+}
+
+
+
+/* appbar */
+
+.client .v-sheet.v-app-bar.v-toolbar .v-btn:before{
+    background:none !important;
+}
+.theme--dark .client .v-sheet.v-app-bar.v-toolbar .v-btn:hover{
+    background:#535970 !important;
+}
+.theme--light .client .v-sheet.v-app-bar.v-toolbar .v-btn:hover{
+    background:#dddddd !important;
+}
+
+
+/* nav */
+.send-icon{
+    position: relative;
+    top: -3px !important;
+    transform: rotate(-40deg) !important;
+}
+
+.theme--dark .v-toolbar.v-sheet{
+    background:#161616 !important;
+}
+
+
+.theme--light .navbarColor{
+    background:#ffffff !important
+}
+
+.theme--dark .navbarColor{
+    background:#161616 !important
+}
+
+/* language button */
+
+
+
+/* menu list */
+
+.v-menu__content .theme--dark.v-list {
+    background: #333333 !important;
+}
+.v-menu__content .theme--light.v-list {
+    background: #ffffff !important;
+}
+
+
+/* divider */
+
+.theme--dark.v-divider {
+    border-color: rgba(238, 238, 238, 0.24) !important;
+}
+
+/* search nav header */
+
+.theme--dark .searchBox  .v-input__control > .v-input__slot {
+ background: #535970 !important;
+}
+.theme--light .searchBox  .v-input__control > .v-input__slot {
+ background: #EEEDF7 !important;
+}
+
+
+.theme--dark .edit_profile{
+    background: #2E3651 !important;
+}
+
+
+.theme--dark .client .v-tooltip .v-tooltip__content {
+    background: #2E3651 !important
+}
+
+
+
+/* profile dropdown setting */
+/* .theme--light .profile_bg_dropdown{
+    color: red !important;
+}
+.theme--dark .profile_bg_dropdown{
+    background: red !important;
+} */
+
+
+
+.theme--dark  .v-bottom-navigation{
+    background: #333333 !important;
+}
+.theme--light  .v-bottom-navigation{
+    background: #ffffff !important;
+}
+.theme--dark.v-navigation-drawer {
+    background: #333333 !important;
+}
+.theme--light  .v-navigation-drawer{
+    background: #ffffff !important;
+}
+
+
+.theme--dark.privacy_bg {
+    background: #333333 !important;
+}
+.theme--light  .privacy_bg{
+    background: #ffffff !important;
+}
+
+
+/* mobile nav */
+
+.v-navigation-drawer--right{
+   
+    right:0 !important;
+}
+
+
+
+/* colors */
+
+.color-gold{
+    color:#EDA800 !important
+}
+
+.color-body{
+    color:#191919 !important
+}
+.color-navbar{
+    color:#161616 !important
+}
+
+.color-main{
+    color:#EDA800 !important
+}
+
+.background-color-main{
+    background:#333333 !important
+}
+
+
+.slider .v-image__image--cover{
+    border-radius: 20px !important;
+}
+
+
+
+.line-clamp {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3 !important;
+    -webkit-box-orient: vertical !important;  
+    overflow: hidden !important;
+}

@@ -1,0 +1,12 @@
+@media only screen and (max-width: 850px) {
+    /* .client{
+        padding:0px !important;
+    } */
+
+    .slider .v-image{
+        height:280px !important;
+    }
+    .slider {
+        height:280px !important;
+    }
+}
