@@ -208,7 +208,40 @@
 
     <v-row class="d-flex justify-space-between  mb-1 ">
       <v-col cols="12" lg="6" md="6">
+           <v-row class="d-flex flex-wrap">
+     
+              <v-col cols="6" lg="6" md="6">
+                <v-img
+                class="mx-auto mb-3"
+                  src="../../assets/img/about1.jpg"
+                ></v-img>
+              </v-col>
+              <v-col cols="6" lg="6" md="6">
+                <v-img
+                class="mx-auto mb-3"
+                height="220"
+                  src="../../assets/img/about4.jpg"
+                ></v-img>
 
+                <v-col cols="6" lg="6" md="6">
+                <v-img
+                class="mx-auto mb-3"
+                height="320"
+                  src="../../assets/img/about3.jpg"
+                ></v-img>
+              </v-col>
+
+              </v-col>
+
+              <v-col cols="6" lg="6" md="6">
+                <v-img
+                class="mx-auto mb-3"
+                height="220"
+                  src="../../assets/img/about4.jpg"
+                ></v-img>
+              </v-col>
+  
+           </v-row>
       </v-col>
 
       <v-col cols="12" lg="6" md="6">
@@ -330,6 +363,12 @@ import appFooter from "../../layouts/client/footer.vue";
                     '../../assets/img/slider1.jpg',
                     '../../assets/img/slider2.jpg',
                     '../../assets/img/slider3.jpg',
+                ],
+                aboutme_images: [
+                    '../../assets/img/about1.jpg',
+                    '../../assets/img/about2.jpg',
+                    '../../assets/img/about3.jpg',
+                    '../../assets/img/about4.jpg',
                 ],
 
           
