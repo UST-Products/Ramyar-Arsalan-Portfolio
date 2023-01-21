@@ -9,7 +9,7 @@
 
    
   <v-row  align="center" md="10" class="my-10 d-flex justify-space-around hero-section">
-    <v-col  md="4" align="center">
+    <v-col  md="3" align="center">
       
           <v-card
     class="mx-auto"
@@ -36,12 +36,27 @@
 
     </v-col> 
 
- <v-col md="8" align="center"> 
-  <v-img
+ <v-col md="4" align="center"> 
+  <!-- <v-img
     tile
     max-width="400"
     src="../../assets/img/dev.svg"
-  ></v-img>
+  ></v-img> -->
+
+    <v-carousel
+      :continuous="false"
+      :cycle="true"
+      :show-arrows="false"
+      hide-delimiter-background
+      height="370"
+      >
+
+      <v-carousel-item><v-img  style="border-radius:20px !important;"  src="../../assets/img/slider1.jpg"></v-img></v-carousel-item>
+      <v-carousel-item><v-img style="border-radius:20px !important" src="../../assets/img/slider2.jpg"></v-img></v-carousel-item>
+      <v-carousel-item><v-img style="border-radius:20px !important" src="../../assets/img/slider3.jpg"></v-img></v-carousel-item>
+
+    </v-carousel>
+
  </v-col> 
   </v-row>
 
@@ -323,6 +338,11 @@ import appFooter from "../../layouts/client/footer.vue";
                         logo:'https://imgs.search.brave.com/HOz_FhtCyv3QXOfs0TGEbjuZO1u-iBXHN05ftoGDfss/rs:fit:1028:1024:1/g:ce/aHR0cHM6Ly93aWtp/LmltYWwub3JnL3Np/dGVzL2RlZmF1bHQv/ZmlsZXMvdXNlcnMv/dXNlcjYxOC9nYWxs/ZXJ5L3Rlc2xhX2xv/Z29fcG5nMTAxNTgy/ODAyMzkzLnBuZw'
                     },
                    
+                ],
+                slides: [
+                    '../../assets/img/slider1.jpg',
+                    '../../assets/img/slider2.jpg',
+                    '../../assets/img/slider3.jpg',
                 ],
 
           
