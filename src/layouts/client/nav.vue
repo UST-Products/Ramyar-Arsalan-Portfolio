@@ -11,53 +11,53 @@
         app
         left
       >
-        <v-list-item to="/profile" active-class="profile_mobile">
-          <v-list-item-avatar>
-            <v-img src="https://cdn.pixabay.com/photo/2019/09/04/13/41/couple-4451632__340.jpg"></v-img>
-          </v-list-item-avatar>
-  
+       
+      <v-list>
+
+        <v-list-item link href="#" @click="click_home_drawer()">
           <v-list-item-content>
-            <v-list-item-title>Zhyar Ali</v-list-item-title>
+            <v-list-item-title>Home</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-  
-        <v-divider></v-divider>
-  
-          <v-list >
-            <v-list-item >
-              <v-list-item-title v-if="$vuetify.theme.dark">LightMode</v-list-item-title>
-              <v-list-item-title v-else>DarkMode</v-list-item-title>
-              <v-list-item-action>
-                <v-switch hide-details  @click="mode()" v-model="darktheme"></v-switch>
-              </v-list-item-action>
-            </v-list-item>
-    
-  
-                   <v-menu  v-model="lang_menu_mobile" offset-y>
-                <template v-slot:activator="{ on, attrs }">
-                  <v-btn class="text-capitalize font_rabar" v-bind="attrs" v-on="on" text>
-                    <v-icon>mdi-translate</v-icon>
-                    {{ activeLang }}
-                    <v-icon >mdi-menu-down</v-icon>
-                  </v-btn>
-                </template>
-                <v-list dense>
-                  <v-list-item link v-for="(lang, index) in langs" :key="index">
-                    <v-list-item-title v-on:click="changeLang(lang.value)">{{ lang.title }}</v-list-item-title>
-                  </v-list-item>
-                </v-list>
-              </v-menu>
-  
+
+        <v-list-item link href="#" v-scroll-to="'#exp'" @click="mobileDrawer=false">
+          <v-list-item-content>
+            <v-list-item-title>Experience</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item link href="#" v-scroll-to="'#about'" @click="mobileDrawer=false">
+          <v-list-item-content>
+            <v-list-item-title>About</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item link href="#" v-scroll-to="'#contact'" @click="mobileDrawer=false">
+          <v-list-item-content>
+            <v-list-item-title>Contact</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+
+      </v-list>
+
+      
+
+      <template v-slot:append>
+        <div class="pa-2 mb-4">
+
+           <v-row class="d-flex  px-4">
+             <h5>Follow Me</h5>
+           </v-row>
           
-          <v-list-item to="/login" link  class="rounded-lg">
-             <v-icon >mdi-logout</v-icon> &nbsp; Logout
-          </v-list-item>
-  
-          <v-list-item to="/edit_profile" link  class="rounded-lg">
-             <v-icon >mdi-cog</v-icon> &nbsp; Setting
-          </v-list-item>
-  
-          </v-list>
+          <v-row class="d-flex  px-2" >
+               <a href="#" style="text-decoration: none;"> <v-icon class="mx-1">mdi-facebook</v-icon></a>
+               <a href="#" style="text-decoration: none;"> <v-icon class="mx-1">mdi-youtube</v-icon></a>
+               <a href="#" style="text-decoration: none;"> <v-icon class="mx-1">mdi-instagram</v-icon></a>
+         </v-row>
+
+        </div>
+      </template>
       
       </v-navigation-drawer>
   
@@ -65,25 +65,26 @@
   
       <v-app-bar
         app
+        elevation="0"
         class="px-2 navbarColor "
         v-if="isXs"
     
       >
  
 
-      <v-btn  text @click="click_home()"  class="mx-2 text-capitalize">
+      <v-btn   :class="{ active: isActive('home') }"  text @click="click_home()"  class="mx-2 text-capitalize">
            <h3>Home</h3>
       </v-btn>
 
-      <v-btn href="#exp"  text  class="mx-2 text-capitalize">
+      <v-btn href="#" v-scroll-to="'#exp'" :class="{ active: isActive('exp') }" @click="setActive('exp')"  text  class="mx-2 text-capitalize">
            <h3>Experience</h3>
       </v-btn>
 
-      <v-btn href="#about" text  class="mx-2 text-capitalize">
+      <v-btn href="#" v-scroll-to="'#about'" text :class="{ active: isActive('about') }" @click="setActive('about')"  class="mx-2 text-capitalize">
            <h3>About Me</h3>
       </v-btn>
 
-      <v-btn  text  class="mx-2 text-capitalize">
+      <v-btn href="#" v-scroll-to="'#contact'" text :class="{ active: isActive('contact') }" @click="setActive('contact')" class="mx-2 text-capitalize">
            <h3>Contact</h3>
       </v-btn>
       
@@ -108,9 +109,9 @@
 
 
          <v-row class="d-flex justify-end px-2" >
-                <v-icon class="mx-1">mdi-facebook</v-icon>
-                <v-icon class="mx-1">mdi-youtube</v-icon>
-                <v-icon class="mx-1">mdi-instagram</v-icon>
+               <a href="#" style="text-decoration: none;"> <v-icon class="mx-1">mdi-facebook</v-icon></a>
+               <a href="#" style="text-decoration: none;"> <v-icon class="mx-1">mdi-youtube</v-icon></a>
+               <a href="#" style="text-decoration: none;"> <v-icon class="mx-1">mdi-instagram</v-icon></a>
          </v-row>
   
   
@@ -130,65 +131,35 @@
         v-else
       >
       
-        <v-app-bar-title>
-          <router-link to="/">
-          <!-- <v-img src="@/assets/applogo.png" max-width="120px" /> -->
-          <h5 class="white--text">Kalian</h5>
-        </router-link>
-        </v-app-bar-title>
-      
+
+
+            <v-btn
+            @click="mode()"
+              fab
+              small
+              elevation="0"
+            >
+            <v-icon v-if="$vuetify.theme.dark==false" >mdi-weather-night</v-icon>
+            <v-icon v-if="$vuetify.theme.dark==true" >mdi-white-balance-sunny</v-icon>
+        
+            </v-btn>
+
             <v-spacer></v-spacer>
-  
-           <v-btn icon to="/cart" color="white">
-             <v-icon>mdi-cart</v-icon>
-          </v-btn>
-           <v-btn icon to="/setting" color="white">
-             <v-icon>mdi-cog</v-icon>
-          </v-btn>
-           <v-btn text to="/login" color="white" style="font-size: 11px;">
-              Logout
-             <v-icon>mdi-logout</v-icon>
-          </v-btn>
-           <v-btn text to="/login" color="white" style="font-size: 11px;">
-              Login
-             <v-icon>mdi-login</v-icon>
-          </v-btn>
+
+        <v-btn
+          text
+          fab
+          small
+          elevation="0"
+          @click.stop="mobileDrawer = !mobileDrawer"
+        >
+          <v-icon>mdi-menu</v-icon>
+        </v-btn>
+ 
       </v-app-bar>
   
   
-  
-  
-  <!-- mobile bottom nav -->
-      <v-bottom-navigation
-      app fixed
-      v-if="!isXs"
-      color="primary"
-    >
-      <v-btn to="/">
-        <span>Home</span>
-         <v-icon>mdi-home-variant</v-icon>
-      </v-btn>
-  
-  
-      <v-btn to="/products">
-        <span>Product</span>
-         <v-icon>mdi-package</v-icon>
-      </v-btn>
-  
-      <v-btn to="/productCategory">
-        <span>Categories</span>
-         <v-icon>mdi-shape</v-icon>
-      </v-btn>
-  
-      <v-btn to="/brands">
-        <span>Brands</span>
-         <v-icon>mdi-tag-multiple</v-icon>
-      </v-btn>
-  
-  
-  
-  
-    </v-bottom-navigation>
+ 
   
   
   
@@ -218,6 +189,13 @@
       langs:[],
       activeLang:'',
       radioGroup:'1',
+      items: [
+          { title: 'Home', to: '#home' },
+          { title: 'Experience', to: '#exp' },
+          { title: 'About Me', to: '#about' },
+          { title: 'Contact', to: '#contact' },
+        ],
+        activeItem: 'home'
       // testt:i18n.t('ENGLISH')
   
           
@@ -228,9 +206,29 @@
       color: String,
       flat: Boolean,
     }, 
+
+  
     methods: {
 
+
+      isActive(menuItem) {
+      return this.activeItem === menuItem
+    },
+
+    setActive(menuItem) {
+      this.activeItem = menuItem // no need for Vue.set()
+    },
+
         click_home(){
+          this.setActive('home')
+          window.scrollTo({
+                        top:0,
+                        behavior: 'smooth'
+          });
+
+        },
+        click_home_drawer(){
+          this.mobileDrawer=false
           window.scrollTo({
                         top:0,
                         behavior: 'smooth'

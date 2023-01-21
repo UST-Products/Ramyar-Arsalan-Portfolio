@@ -184,7 +184,7 @@ color: white !important;
     background:none !important;
 }
 .theme--dark .client .v-sheet.v-app-bar.v-toolbar .v-btn:hover{
-    background:#535970 !important;
+    background:#333333 !important;
 }
 .theme--light .client .v-sheet.v-app-bar.v-toolbar .v-btn:hover{
     background:#dddddd !important;
@@ -333,4 +333,10 @@ color: white !important;
     -webkit-line-clamp: 3 !important;
     -webkit-box-orient: vertical !important;  
     overflow: hidden !important;
+}
+
+
+.active{
+    background:#EDA800 !important;
+    color: #333333 !important;
 }

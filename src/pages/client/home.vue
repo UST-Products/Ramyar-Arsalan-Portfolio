@@ -8,7 +8,7 @@
 
 
 <v-container> 
-  <v-row  align="center" md="10" class="my-10 d-flex justify-space-around hero-section">
+  <v-row  align="center" md="10" class=" d-flex justify-space-around hero-section">
     <v-col  md="7" lg="7">
       
           <v-card
@@ -19,7 +19,7 @@
     
   >
    
-    <v-card-text class="pb-0 text-h3 font-weight-bold text-mode">
+    <v-card-text class="pb-0 text-h4 font-weight-bold text-mode">
       Ramyar Arsalan
     </v-card-text>
 
@@ -339,6 +339,10 @@
        </v-card>
      </v-row>
 
+
+     <v-row id="contact">
+   <v-col cols="" md=""></v-col>
+ </v-row>
 
 
      <!-- contact -->

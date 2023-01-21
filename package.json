@@ -19,6 +19,7 @@
     "vue-meta": "^2.4.0",
     "vue-read-more-smooth": "^0.1.8",
     "vue-router": "^3.2.0",
+    "vue-scrollto": "^2.20.0",
     "vue-swatches": "^2.1.1",
     "vuelidate": "^0.7.6",
     "vuetify": "^2.6.5",
