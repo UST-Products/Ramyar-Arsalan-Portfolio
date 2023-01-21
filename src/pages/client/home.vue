@@ -73,7 +73,7 @@
 <v-row class="d-flex justify-space-between px-4 mb-1">
     <h2 class="color_mode">Blog</h2>
 
-    <router-link to="" class="color-gold"><v-icon class="color-gold">mdi-plus</v-icon> View All</router-link>
+    <router-link style="text-decoration: none;" to="/blogs" class="color-gold"> View All</router-link>
 
  </v-row>   
 
@@ -84,11 +84,11 @@
 <v-col 
   v-for="(item, index) in blogs" :key="index" 
   cols="12" sm="12" md="3" lg="4" xl="4">
-  <router-link to="/brands" style="text-decoration: none;" class="color_mode">
+  <router-link to="/view-blog" style="text-decoration: none;" class="color_mode">
   <v-card
   elevation="0"
   height="150"
-      style="border-radius:15px;background:white" >
+      style="border-radius:15px;" class="bg_mode" >
      
 
 
@@ -105,7 +105,7 @@
               <div>
                 <v-card-title
                 style="font-size:16px;"
-                class="line-clamp black--text"
+                class="line-clamp "
                 >
                 {{ item.title }}
                

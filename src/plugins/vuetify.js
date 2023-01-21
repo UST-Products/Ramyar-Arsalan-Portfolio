@@ -12,6 +12,10 @@ const opts = {
           light: {
             primary: "#EDA800",
          
+          },
+          dark: {
+            primary: "#EDA800",
+         
           }
         }
       }

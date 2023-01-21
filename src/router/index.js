@@ -8,6 +8,9 @@ import clientabout from '../pages/client/about.vue'
 import clientcontact from '../pages/client/contact.vue'
 import clientLogin from '../pages/client/login.vue'
 import clientSetting from '../pages/client/setting.vue'
+import blogs from '../pages/client/blogs.vue'
+import ViewBlogs from '../pages/client/view_blog.vue'
+import OpenCompany from '../pages/client/open_company.vue'
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -179,6 +182,30 @@ const routes = [
     name: 'clientSetting',
     component:clientSetting
   }, 
+  {
+    path: '/blogs',
+    name: 'blogs',
+    component:blogs,
+    meta: {
+      hideNavbar: true,
+     }
+  },
+  {
+    path: '/view-blog',
+    name: 'ViewBlogs',
+    component:ViewBlogs,
+    meta: {
+      hideNavbar: true,
+     }
+  },
+  {
+    path: '/open-company',
+    name: 'OpenCompany',
+    component:OpenCompany,
+    meta: {
+      hideNavbar: true,
+     }
+  }
   
 
 

@@ -21,9 +21,10 @@
 
     <v-main :class="[app_style ? 'dashboard' :'client']">
 
-     
+     <transition name="fade"
+        mode="out-in">
        <router-view :key="$route.path"></router-view>
-
+    </transition>
        
     
     </v-main>
