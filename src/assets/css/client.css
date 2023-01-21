@@ -321,6 +321,13 @@ color: white !important;
     background:#ffffff !important
 }
 
+.theme--dark .text-opacity{
+    color:#C1C1C1 !important
+}
+.theme--light .text-opacity{
+    color:#161616 !important
+}
+
 
 .slider .v-image__image--cover{
     border-radius: 20px !important;
@@ -340,3 +347,16 @@ color: white !important;
     background:#EDA800 !important;
     color: #333333 !important;
 }
+
+
+.theme--dark .client .v-sheet.v-app-bar.v-toolbar .active:hover{
+    background:#ce9402 !important;
+    color: #333333 !important;
+}
+
+
+.indesktop-center{
+    text-align: center !important;
+    object-position: center !important;
+}
+

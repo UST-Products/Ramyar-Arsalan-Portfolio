@@ -144,6 +144,7 @@ if(this.lang()==='en') {
                           window.scrollTo({
                         top:0,
                         behavior: 'smooth'
+                        
                         });
     }
   },

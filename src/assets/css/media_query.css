@@ -9,4 +9,19 @@
     .slider {
         height:280px !important;
     }
+
+    .indesktop-center{
+        text-align: left !important;
+        /* object-position: none !important; */
+    }
+    .company_image{
+        max-width:70px !important
+    }
+    .company_image_row{
+        justify-content: center !important;
+    }
+
+    .company_name_list{
+        text-align-last: center !important;
+    }
 }

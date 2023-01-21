@@ -196,7 +196,7 @@
 
       
       <v-card-actions>
-        <v-btn class="mx-auto rounded-lg black--text text-capitalize" block color="#EDA800" >Open</v-btn>
+        <v-btn to="/open-company" class="mx-auto rounded-lg black--text text-capitalize" block color="#EDA800" >Open</v-btn>
       </v-card-actions>
          
         </v-card>
