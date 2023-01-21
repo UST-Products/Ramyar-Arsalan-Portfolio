@@ -31,6 +31,10 @@
       Based in Kurdistan
     </v-card-text>
 
+    <v-card-text class="pb-0 text-h6 font-weight-bold text-mode">
+      <v-icon>mdi-map-marker</v-icon> <span>Iraq</span>
+    </v-card-text>
+
 
   </v-card>
 
@@ -142,7 +146,9 @@
 
 
 
-
+ <v-row id="exp">
+   <v-col cols="" md=""></v-col>
+ </v-row>
 
 
 
@@ -202,6 +208,10 @@
 
 
 
+     <v-row id="about">
+   <v-col cols="" md=""></v-col>
+ </v-row>
+
      <v-row class="d-flex justify-space-between px-4 mb-1 mt-16">
     <h2 class="color_mode">About Me</h2>
     </v-row> 
@@ -212,64 +222,71 @@
      
               <v-col cols="6" lg="6" md="6">
                 <v-img
-                class="mx-auto mb-3"
+                class="mx-auto mb-3 rounded-lg"
+                height="300"
                   src="../../assets/img/about1.jpg"
                 ></v-img>
-              </v-col>
-              <v-col cols="6" lg="6" md="6">
                 <v-img
-                class="mx-auto mb-3"
-                height="220"
+                class="mx-auto mb-3 rounded-lg"
+                  height="260"
+                  src="../../assets/img/about2.jpg"
+                ></v-img>
+                
+              </v-col>
+
+              <v-col cols="6" lg="6" md="6">
+
+                <v-img
+                class="mx-auto mb-3 rounded-lg"
                   src="../../assets/img/about4.jpg"
                 ></v-img>
 
-                <v-col cols="6" lg="6" md="6">
+
                 <v-img
-                class="mx-auto mb-3"
-                height="320"
+                class="mx-auto mb-3 rounded-lg"
+                height="325"
                   src="../../assets/img/about3.jpg"
                 ></v-img>
-              </v-col>
+
 
               </v-col>
 
-              <v-col cols="6" lg="6" md="6">
-                <v-img
-                class="mx-auto mb-3"
-                height="220"
-                  src="../../assets/img/about4.jpg"
-                ></v-img>
-              </v-col>
+  
+     
+         
+     
+
+
   
            </v-row>
       </v-col>
 
       <v-col cols="12" lg="6" md="6">
-        <v-expansion-panels accordion >
+        <v-expansion-panels accordion v-model="panel">
               <v-expansion-panel class="bg_mode">
-                <v-expansion-panel-header>Generally</v-expansion-panel-header>
-                <v-expansion-panel-content>
+                <v-expansion-panel-header style="font-size:20px">Generally</v-expansion-panel-header>
+                <v-expansion-panel-content style="font-size:20px">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </v-expansion-panel-content>
               </v-expansion-panel>
 
               <v-expansion-panel class="bg_mode">
-                <v-expansion-panel-header>Personality</v-expansion-panel-header>
-                <v-expansion-panel-content>
+                <v-expansion-panel-header style="font-size:20px">Personality</v-expansion-panel-header>
+                <v-expansion-panel-content style="font-size:20px">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </v-expansion-panel-content>
               </v-expansion-panel>
 
               <v-expansion-panel class="bg_mode">
-                <v-expansion-panel-header>Products</v-expansion-panel-header>
-                <v-expansion-panel-content>
+                <v-expansion-panel-header style="font-size:20px">Products</v-expansion-panel-header>
+                <v-expansion-panel-content style="font-size:20px">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </v-expansion-panel-content>
               </v-expansion-panel>
 
               <v-expansion-panel class="bg_mode">
-                <v-expansion-panel-header>The Customers</v-expansion-panel-header>
-                <v-expansion-panel-content>
+                <v-expansion-panel-header style="font-size:20px">The Customers</v-expansion-panel-header>
+                <v-expansion-panel-content style="font-size:20px">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </v-expansion-panel-content>
               </v-expansion-panel>
@@ -278,6 +295,92 @@
         </v-expansion-panels>
       </v-col>
 
+    </v-row> 
+
+
+
+     <v-row class="mt-16">
+       <v-card width="100%" class="bg_mode">
+          <v-card-title class="text-h6 text-center d-flex justify-center">
+            Owner Ship
+          </v-card-title>
+          <v-divider></v-divider>
+          <v-card-actions class="background-navbar d-flex justify-center pa-3">
+             <v-row class="d-flex justify-center">
+
+                <v-list style="background:transparent !important">
+                  <v-list-item>
+                    <v-list-item-avatar>
+                      <v-img
+                        src="https://imgs.search.brave.com/rYoPelsfyW9ev18-EKOHksgjr0RenPMAg99FivrMLKs/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9jZG4u/ZnJlZWJpZXN1cHBs/eS5jb20vbG9nb3Mv/bGFyZ2UvMngvbW9u/ZXJvLWxvZ28tcG5n/LXRyYW5zcGFyZW50/LnBuZw"
+                      ></v-img>
+                    </v-list-item-avatar>
+                    <v-list-item-content>
+                      <v-list-item-title >Company Name</v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-list>
+
+                <v-list style="background:transparent !important">
+                  <v-list-item>
+                    <v-list-item-avatar>
+                      <v-img
+                        src="https://imgs.search.brave.com/rYoPelsfyW9ev18-EKOHksgjr0RenPMAg99FivrMLKs/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9jZG4u/ZnJlZWJpZXN1cHBs/eS5jb20vbG9nb3Mv/bGFyZ2UvMngvbW9u/ZXJvLWxvZ28tcG5n/LXRyYW5zcGFyZW50/LnBuZw"
+                      ></v-img>
+                    </v-list-item-avatar>
+                    <v-list-item-content>
+                      <v-list-item-title >Company Name</v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-list>
+
+             </v-row>
+          </v-card-actions>
+       </v-card>
+     </v-row>
+
+
+
+     <!-- contact -->
+
+     <v-row class="d-flex justify-space-between px-4 mb-1 mt-16">
+    <h2 class="color_mode">Contact</h2>
+    </v-row> 
+
+     <v-row class="d-flex justify-space-between px-4 ">
+      <v-list style="background:transparent !important">
+                  <v-list-item>
+                    <v-list-item-avatar>
+                      <v-icon
+                          
+                          class="bg_mode"
+                        >
+                          mdi-email
+                        </v-icon>
+                    </v-list-item-avatar>
+                    <v-list-item-content>
+                      <v-list-item-title >Example@Example.com</v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-list>
+    </v-row> 
+
+
+    <v-row class="d-flex justify-space-between px-4">
+      <v-list style="background:transparent !important">
+                  <v-list-item>
+                    <v-list-item-avatar>
+                      <v-icon
+                          class="bg_mode"
+                        >
+                         mdi-phone
+                        </v-icon>
+                    </v-list-item-avatar>
+                    <v-list-item-content>
+                      <v-list-item-title >+964 (0) 0770 111 22 33</v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-list>
     </v-row> 
 
 
@@ -308,6 +411,7 @@ import appFooter from "../../layouts/client/footer.vue";
                 { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6 },
             ],
                 page:1,
+                panel:[0,1],
                 filterby:'Latest',
                 filter_item:['Latest','Oldest','Lowest Price','Highest Price','Digital Products','Custom Content'],
              product_setting:[

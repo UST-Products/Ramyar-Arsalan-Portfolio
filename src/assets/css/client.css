@@ -314,6 +314,13 @@ color: white !important;
     background:#333333 !important
 }
 
+.theme--dark .background-navbar{
+    background:#161616 !important
+}
+.theme--light .background-navbar{
+    background:#ffffff !important
+}
+
 
 .slider .v-image__image--cover{
     border-radius: 20px !important;

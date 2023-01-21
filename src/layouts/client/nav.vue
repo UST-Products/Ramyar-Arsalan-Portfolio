@@ -70,31 +70,24 @@
     
       >
  
+
+      <v-btn  text @click="click_home()"  class="mx-2 text-capitalize">
+           <h3>Home</h3>
+      </v-btn>
+
+      <v-btn href="#exp"  text  class="mx-2 text-capitalize">
+           <h3>Experience</h3>
+      </v-btn>
+
+      <v-btn href="#about" text  class="mx-2 text-capitalize">
+           <h3>About Me</h3>
+      </v-btn>
+
+      <v-btn  text  class="mx-2 text-capitalize">
+           <h3>Contact</h3>
+      </v-btn>
       
-      <navItem to="/"   
-      text="Home"
-      icon="mdi-home-variant" 
-      TooltipText="HOME"
-      />
-  
-  
-  
-      <navItem to="/products"   
-      text="Experience"
-      icon="mdi-package" 
-      TooltipText="SHOP"
-      />
-  
-      
-      <navItem to="/about"   
-      text="About Me"
-      icon="mdi-information" 
-      />
-  
-      <navItem to="/about"   
-      text="Contact"
-      icon="mdi-information" 
-      />
+    
   
    <v-spacer></v-spacer>
   
@@ -208,7 +201,7 @@
   
   <script>
   // import notification from "../../components/client/navbarNotification.vue"
-  import navItem from "../../components/client/navItem.vue"
+  // import navItem from "../../components/client/navItem.vue"
   // import i18n from '../../i18n'
   
   export default {
@@ -230,12 +223,20 @@
           
      
     }),
-    components:{navItem},
+    // components:{navItem},
     props: {
       color: String,
       flat: Boolean,
     }, 
     methods: {
+
+        click_home(){
+          window.scrollTo({
+                        top:0,
+                        behavior: 'smooth'
+          });
+        },
+
         changeLang(lang){
           localStorage.setItem('lang',lang)
         //  let activeLang=localStorage.getItem('lang')
