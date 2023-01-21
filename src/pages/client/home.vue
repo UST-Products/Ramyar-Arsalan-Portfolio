@@ -7,27 +7,27 @@
         <!-- slider -->
 
 
-   
+<v-container> 
   <v-row  align="center" md="10" class="my-10 d-flex justify-space-around hero-section">
-    <v-col  md="3" align="center">
+    <v-col  md="7" lg="7">
       
           <v-card
-    class="mx-auto"
-    max-width="400"
+
+
     style="background:none !important"
     elevation="0"
     
   >
    
-    <v-card-text class="pb-0 text-h5 font-weight-bold text-mode">
+    <v-card-text class="pb-0 text-h3 font-weight-bold text-mode">
       Ramyar Arsalan
     </v-card-text>
 
-    <v-card-text class="pb-0 text-h5 font-weight-bold color-gold">
+    <v-card-text class="pb-0 text-h4 font-weight-bold color-gold">
       Business
     </v-card-text>
 
-    <v-card-text class="pb-0 text-h5 font-weight-bold text-mode">
+    <v-card-text class="pb-0 text-h4 font-weight-bold text-mode">
       Based in Kurdistan
     </v-card-text>
 
@@ -36,7 +36,7 @@
 
     </v-col> 
 
- <v-col md="4" align="center"> 
+ <v-col md="5" lg="5" align="center"> 
   <!-- <v-img
     tile
     max-width="400"
@@ -44,7 +44,7 @@
   ></v-img> -->
 
     <v-carousel
-      :continuous="false"
+      :continuous="true"
       :cycle="true"
       :show-arrows="false"
       hide-delimiter-background
@@ -52,14 +52,14 @@
       >
 
       <v-carousel-item><v-img  style="border-radius:20px !important;"  src="../../assets/img/slider1.jpg"></v-img></v-carousel-item>
-      <v-carousel-item><v-img style="border-radius:20px !important" src="../../assets/img/slider2.jpg"></v-img></v-carousel-item>
+      <!-- <v-carousel-item><v-img  style="object-fit:fill; border-radius:20px !important" src="../../assets/img/slider2.jpg"></v-img></v-carousel-item> -->
       <v-carousel-item><v-img style="border-radius:20px !important" src="../../assets/img/slider3.jpg"></v-img></v-carousel-item>
 
     </v-carousel>
 
  </v-col> 
   </v-row>
-
+</v-container>
       
     
  <v-container class="mt-10 mb-10">
@@ -142,13 +142,12 @@
 
 
 
-<div class="mt-15"></div>
 
 
 
-    <!-- productcategories -->
 
-    <v-row class="d-flex justify-space-between px-4 mb-1">
+
+    <v-row class="d-flex justify-space-between px-4 mb-1 mt-16">
     <h2 class="color_mode">Experience</h2>
     </v-row> 
 
@@ -191,7 +190,7 @@
 
       
       <v-card-actions>
-        <v-btn class="mx-auto" color="primary">Open</v-btn>
+        <v-btn class="mx-auto rounded-lg black--text text-capitalize" block color="#EDA800" >Open</v-btn>
       </v-card-actions>
          
         </v-card>
@@ -203,63 +202,51 @@
 
 
 
+     <v-row class="d-flex justify-space-between px-4 mb-1 mt-16">
+    <h2 class="color_mode">About Me</h2>
+    </v-row> 
 
-<!-- about -->
+    <v-row class="d-flex justify-space-between  mb-1 ">
+      <v-col cols="12" lg="6" md="6">
 
-<v-row class="d-flex justify-center mb-1 mt-15 ">
-    <h2 class="color-gold">{{langkeyword('ABOUT')}}</h2>
- </v-row>   
+      </v-col>
 
-<v-row dense>
-    
+      <v-col cols="12" lg="6" md="6">
+        <v-expansion-panels accordion >
+              <v-expansion-panel class="bg_mode">
+                <v-expansion-panel-header>Generally</v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </v-expansion-panel-content>
+              </v-expansion-panel>
 
-        <v-col
-          cols="12"
-        >
+              <v-expansion-panel class="bg_mode">
+                <v-expansion-panel-header>Personality</v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </v-expansion-panel-content>
+              </v-expansion-panel>
 
-       
-            <div class="d-flex flex-wrap justify-space-between align-center" >
+              <v-expansion-panel class="bg_mode">
+                <v-expansion-panel-header>Products</v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </v-expansion-panel-content>
+              </v-expansion-panel>
 
-                <v-col cols="12" lg="3" md="3" class="text-center">
-
-              
-                <v-img class="mx-auto" src="../../assets/img/about.svg"></v-img>
-       
-            </v-col>
-
-            
-                <v-col cols="12" lg="9" md="9">
-       
-                <v-card-title class="rabar_font white--text" style="font-size:15px;background:#2C6C70;border-radius:15px;">
-                    {{lang()==='ku' ? $store.state.setting.ku_about : $store.state.setting.en_about}}
-            </v-card-title>             
-        </v-col>
-
-    
-            </div>
-      
-        </v-col>
-      </v-row>
-
-<!-- end about -->
-
+              <v-expansion-panel class="bg_mode">
+                <v-expansion-panel-header>The Customers</v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </v-expansion-panel-content>
+              </v-expansion-panel>
 
 
-<!-- address -->
+        </v-expansion-panels>
+      </v-col>
 
-<v-row class="d-flex justify-center mb-3 mt-10 ">
-    <h2 class="color-gold">{{langkeyword('ADDRESS')}}</h2>
- </v-row> 
- 
- 
-  <v-row class="d-flex justify-center mb-10 mt-10 ">
-    <v-img style="border-radius:15px" src="https://www.geog.leeds.ac.uk/courses/postgrad/web/lectures/googlemaps/intro/images/googlemaps.gif"></v-img>
-  </v-row>
+    </v-row> 
 
- <v-row class="mb-10">
-   
- </v-row>
-<!-- end address -->
 
 </v-container>
 
