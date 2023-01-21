@@ -66,8 +66,7 @@
       <v-app-bar
         app
         elevation="0"
-        class="px-2 navbarColor "
-        v-if="isXs"
+        class="px-2 navbarColor navbar-desktop"
     
       >
  
@@ -127,8 +126,8 @@
   
         <v-app-bar
         app
-        class="px-2 b_mode color_mode "
-        v-else
+        class="px-2 bg_mode color_mode navbar-mobile"
+      
       >
       
 
@@ -295,6 +294,7 @@
   
   
       this.onResize();
+
       window.addEventListener("resize", this.onResize, { passive: true });
   
               const theme = localStorage.getItem("clientTheme");

@@ -83,7 +83,7 @@
 <v-row class="d-flex justify-center flex-wrap">
 <v-col 
   v-for="(item, index) in blogs" :key="index" 
-  cols="12" sm="12" md="3" lg="4" xl="4">
+  cols="12" sm="10" md="4" lg="4" xl="4">
   <router-link to="/view-blog" style="text-decoration: none;" class="color_mode">
   <v-card
   elevation="0"

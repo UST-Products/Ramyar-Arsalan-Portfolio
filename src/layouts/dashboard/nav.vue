@@ -415,12 +415,12 @@ const AppLanguage=this.$store.state.actlang
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background:#2C6C70;
+  background:#EDA800;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background:#2C6C70;
+  background:#9d7102;
 }
 
     /* body  background */
