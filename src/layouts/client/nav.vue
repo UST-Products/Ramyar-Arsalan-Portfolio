@@ -46,9 +46,9 @@
 </v-row>
 
 <v-row class="d-flex  px-2" >
-    <a href="#" style="text-decoration: none;"> <v-icon class="mx-1">mdi-facebook</v-icon></a>
-    <a href="#" style="text-decoration: none;"> <v-icon class="mx-1">mdi-youtube</v-icon></a>
-    <a href="#" style="text-decoration: none;"> <v-icon class="mx-1">mdi-instagram</v-icon></a>
+  <a href="https://www.facebook.com/profile.php?id=100007840786454&mibextid=LQQJ4d" style="text-decoration: none;"> <v-icon class="mx-1">mdi-facebook</v-icon></a>
+               <a href="https://youtube.com/@ramyar_group6450" style="text-decoration: none;"> <v-icon class="mx-1">mdi-youtube</v-icon></a>
+               <a href="https://instagram.com/ramyar_arsalan?igshid=NTdlMDg3MTY=" style="text-decoration: none;"> <v-icon class="mx-1">mdi-instagram</v-icon></a>
 </v-row>
 
 </div>
@@ -79,13 +79,16 @@
   
   
   
+      
       <v-app-bar
         app
         elevation="0"
-        class="px-2 navbarColor navbar-desktop"
-    
+        class=" navbarColor navbar-desktop"
+        style="padding:0px 90px  !important"
       >
  
+      
+      
 
       <v-btn   :class="{ active: isActive('home') }"  text @click="click_home()"  class="mx-2 text-capitalize">
            <h3>Home</h3>
@@ -124,9 +127,9 @@
 
 
          <v-row class="d-flex justify-end px-2" >
-               <a href="#" style="text-decoration: none;"> <v-icon class="mx-1">mdi-facebook</v-icon></a>
-               <a href="#" style="text-decoration: none;"> <v-icon class="mx-1">mdi-youtube</v-icon></a>
-               <a href="#" style="text-decoration: none;"> <v-icon class="mx-1">mdi-instagram</v-icon></a>
+               <a href="https://www.facebook.com/profile.php?id=100007840786454&mibextid=LQQJ4d" style="text-decoration: none;"> <v-icon class="mx-1">mdi-facebook</v-icon></a>
+               <a href="https://youtube.com/@ramyar_group6450" style="text-decoration: none;"> <v-icon class="mx-1">mdi-youtube</v-icon></a>
+               <a href="https://instagram.com/ramyar_arsalan?igshid=NTdlMDg3MTY=" style="text-decoration: none;"> <v-icon class="mx-1">mdi-instagram</v-icon></a>
          </v-row>
   
   

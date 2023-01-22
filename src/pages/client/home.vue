@@ -83,7 +83,7 @@
 <v-row class="d-flex justify-center flex-wrap">
 <v-col 
   v-for="(item, index) in blogs" :key="index" 
-  cols="12" sm="10" md="4" lg="4" xl="4">
+  cols="10" md="5" lg="4">
   <router-link to="/view-blog" style="text-decoration: none;" class="color_mode">
   <v-card
   elevation="0"
@@ -163,9 +163,8 @@
         
     <v-slide-group
       v-model="model"
-      class="pa-4"
       active-class="success"
-      show-arrows
+    
     >
       <v-slide-item
         v-for="item in experience"
@@ -263,30 +262,30 @@
 
       <v-col cols="12" lg="6" md="6">
         <v-expansion-panels accordion v-model="panel">
-              <v-expansion-panel class="bg_mode">
+              <v-expansion-panel class="bg_mode" >
                 <v-expansion-panel-header style="font-size:20px">Generally</v-expansion-panel-header>
-                <v-expansion-panel-content style="font-size:20px">
+                <v-expansion-panel-content style="font-size:16px">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </v-expansion-panel-content>
               </v-expansion-panel>
 
               <v-expansion-panel class="bg_mode">
                 <v-expansion-panel-header style="font-size:20px">Personality</v-expansion-panel-header>
-                <v-expansion-panel-content style="font-size:20px">
+                <v-expansion-panel-content style="font-size:16px">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </v-expansion-panel-content>
               </v-expansion-panel>
 
               <v-expansion-panel class="bg_mode">
                 <v-expansion-panel-header style="font-size:20px">Products</v-expansion-panel-header>
-                <v-expansion-panel-content style="font-size:20px">
+                <v-expansion-panel-content style="font-size:16px">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </v-expansion-panel-content>
               </v-expansion-panel>
 
               <v-expansion-panel class="bg_mode">
                 <v-expansion-panel-header style="font-size:20px">The Customers</v-expansion-panel-header>
-                <v-expansion-panel-content style="font-size:20px">
+                <v-expansion-panel-content style="font-size:16px">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </v-expansion-panel-content>
               </v-expansion-panel>
@@ -415,7 +414,7 @@ import appFooter from "../../layouts/client/footer.vue";
                 { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6 },
             ],
                 page:1,
-                panel:[0,1],
+                panel:0,
                 filterby:'Latest',
                 filter_item:['Latest','Oldest','Lowest Price','Highest Price','Digital Products','Custom Content'],
              product_setting:[
