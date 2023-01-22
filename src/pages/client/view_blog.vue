@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="anotherpageremovepadding">
         <!-- <navbar/> -->
 
         <v-container>
@@ -143,5 +143,7 @@ import appFooter from "../../layouts/client/footer.vue";
 </script>
 
 <style scoped>
-
+.v-main{
+    padding: 20px 0px 0px !important;
+}
 </style>

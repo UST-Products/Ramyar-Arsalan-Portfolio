@@ -38,12 +38,28 @@
           </v-list-item-content>
         </v-list-item>
 
+        <v-list-item >
+          <div class=" mt-6">
+
+<v-row class="d-flex  px-3">
+  <h5>Follow Me</h5>
+</v-row>
+
+<v-row class="d-flex  px-2" >
+    <a href="#" style="text-decoration: none;"> <v-icon class="mx-1">mdi-facebook</v-icon></a>
+    <a href="#" style="text-decoration: none;"> <v-icon class="mx-1">mdi-youtube</v-icon></a>
+    <a href="#" style="text-decoration: none;"> <v-icon class="mx-1">mdi-instagram</v-icon></a>
+</v-row>
+
+</div>
+        </v-list-item>
+
 
       </v-list>
 
       
 
-      <template v-slot:append>
+      <!-- <template v-slot:append>
         <div class="pa-2 mb-4">
 
            <v-row class="d-flex  px-4">
@@ -57,7 +73,7 @@
          </v-row>
 
         </div>
-      </template>
+      </template> -->
       
       </v-navigation-drawer>
   

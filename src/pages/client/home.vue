@@ -7,7 +7,7 @@
         <!-- slider -->
 
 
-<v-container> 
+<v-container style="transform: translate(0px, -100px);"> 
   <v-row  align="center" md="10" class=" d-flex justify-space-around hero-section">
     <v-col  md="7" lg="7">
       
@@ -299,7 +299,7 @@
 
 
 
-     <v-row class="mt-16">
+     <v-row class="mt-16 pa-3">
        <v-card width="100%" class="bg_mode">
           <v-card-title class="text-h6 text-center d-flex justify-center">
             Owner Ship
