@@ -18,10 +18,12 @@
         height:280px !important;
     }
 
-    .indesktop-center{
+    
+
+    /* .indesktop-center{
         text-align: left !important;
-        /* object-position: none !important; */
-    }
+ 
+    } */
     .company_image{
         max-width:70px !important
     }

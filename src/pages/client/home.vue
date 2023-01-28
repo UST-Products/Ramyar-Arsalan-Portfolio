@@ -19,20 +19,20 @@
     
   >
    
-    <v-card-text class="pb-0 text-h4 font-weight-bold text-mode">
-      Ramyar Arsalan
+    <v-card-text class="pb-0 text-h4 font-weight-bold text-mode" style="font-family: rabar !important">
+      {{langkeyword('RAMYAR_NAME')}}
     </v-card-text>
 
-    <v-card-text class="pb-0 text-h4 font-weight-bold color-gold">
+    <v-card-text class="pb-0 text-h4 font-weight-bold color-gold"  style="font-family: rabar !important">
       Business
     </v-card-text>
 
-    <v-card-text class="pb-0 text-h4 font-weight-bold text-mode">
-      Based in Kurdistan
+    <v-card-text class="pb-0 text-h4 font-weight-bold text-mode"  style="font-family: rabar !important">
+      {{langkeyword('BASED_IN')}}
     </v-card-text>
 
-    <v-card-text class="pb-0 text-h6 font-weight-bold text-mode">
-      <v-icon>mdi-map-marker</v-icon> <span>Iraq</span>
+    <v-card-text class="pb-0 text-h6 font-weight-bold text-mode"  style="font-family: rabar !important">
+      <v-icon>mdi-map-marker</v-icon> <span> {{langkeyword('IRAQ')}}</span>
     </v-card-text>
 
 
@@ -71,9 +71,9 @@
  
 
 <v-row class="d-flex justify-space-between px-4 mb-1">
-    <h2 class="color_mode">Blog</h2>
+    <h2 class="color_mode"> {{langkeyword('BLOG')}}</h2>
 
-    <router-link style="text-decoration: none;" to="/blogs" class="color-gold"> View All</router-link>
+    <router-link style="text-decoration: none;" to="/blogs" class="color-gold"> {{langkeyword('VIEW_ALL')}}</router-link>
 
  </v-row>   
 
@@ -154,7 +154,7 @@
 
 
     <v-row class="d-flex justify-space-between px-4 mb-1 mt-16">
-    <h2 class="color_mode">Experience</h2>
+    <h2 class="color_mode"> {{langkeyword('EXPERIENCE')}}</h2>
     </v-row> 
 
 
@@ -195,7 +195,7 @@
 
       
       <v-card-actions>
-        <v-btn to="/open-company" class="mx-auto rounded-lg black--text text-capitalize" block color="#EDA800" >Open</v-btn>
+        <v-btn to="/open-company" class="mx-auto rounded-lg black--text text-capitalize" block color="#EDA800" > {{langkeyword('OPEN')}}</v-btn>
       </v-card-actions>
          
         </v-card>
@@ -212,7 +212,7 @@
  </v-row>
 
      <v-row class="d-flex justify-space-between px-4 mb-1 mt-16">
-    <h2 class="color_mode">About Me</h2>
+    <h2 class="color_mode"> {{langkeyword('ABOUTME')}}</h2>
     </v-row> 
 
     <v-row class="d-flex justify-space-between  mb-1 ">
@@ -261,30 +261,30 @@
       </v-col>
 
       <v-col cols="12" lg="6" md="6">
-        <v-expansion-panels accordion v-model="panel">
+        <v-expansion-panels accordion v-model="panel" class=" ">
               <v-expansion-panel class="bg_mode" >
-                <v-expansion-panel-header style="font-size:20px">Generally</v-expansion-panel-header>
+                <v-expansion-panel-header style="font-size:20px"> {{langkeyword('GENERALLY')}}</v-expansion-panel-header>
                 <v-expansion-panel-content style="font-size:16px">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </v-expansion-panel-content>
               </v-expansion-panel>
 
               <v-expansion-panel class="bg_mode">
-                <v-expansion-panel-header style="font-size:20px">Personality</v-expansion-panel-header>
+                <v-expansion-panel-header style="font-size:20px"> {{langkeyword('PERSONALLITY')}}</v-expansion-panel-header>
                 <v-expansion-panel-content style="font-size:16px">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </v-expansion-panel-content>
               </v-expansion-panel>
 
               <v-expansion-panel class="bg_mode">
-                <v-expansion-panel-header style="font-size:20px">Products</v-expansion-panel-header>
+                <v-expansion-panel-header style="font-size:20px"> {{langkeyword('PRODUCTS')}}</v-expansion-panel-header>
                 <v-expansion-panel-content style="font-size:16px">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </v-expansion-panel-content>
               </v-expansion-panel>
 
               <v-expansion-panel class="bg_mode">
-                <v-expansion-panel-header style="font-size:20px">The Customers</v-expansion-panel-header>
+                <v-expansion-panel-header style="font-size:20px"> {{langkeyword('THE_CUSTOMERS')}}</v-expansion-panel-header>
                 <v-expansion-panel-content style="font-size:16px">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </v-expansion-panel-content>
@@ -299,9 +299,9 @@
 
 
      <v-row class="mt-16 pa-3">
-       <v-card width="100%" class="bg_mode">
-          <v-card-title class="text-h6 text-center d-flex justify-center">
-            Owner Ship
+       <v-card width="100%" class="bg_mode rounded-lg">
+          <v-card-title class="text-h6 text-center d-flex justify-center" style="font-family:rabar !important">
+            {{langkeyword('OWNER_SHIP')}}
           </v-card-title>
           <v-divider></v-divider>
           <v-card-actions class="background-navbar d-flex justify-center pa-3">
@@ -347,9 +347,14 @@
      <!-- contact -->
 
      <v-row class="d-flex justify-space-between px-4 mb-1 mt-16">
-    <h2 class="color_mode">Contact</h2>
+    <h2 class="color_mode"> {{langkeyword('CONTACT')}}</h2>
     </v-row> 
 
+
+   <v-row class="d-flex justify-center">
+    <v-col cols="12" md="5" lg="5">
+
+        
      <v-row class="d-flex justify-space-between px-4 ">
       <v-list style="background:transparent !important">
                   <v-list-item>
@@ -387,7 +392,79 @@
     </v-row> 
 
 
+    </v-col>
+
+
+<v-col cols="11" lg="7" md="7" class="bg_mode pa-8 rounded-lg">
+
+
+   <v-row >
+     <v-col
+       cols="12"
+       sm="6" 
+       
+     >
+
+
+       <v-text-field
+       outlined
+         :label="this.langkeyword('NAME_CONTACT')"
+         required
+       ></v-text-field>
+     </v-col>
+     <v-col
+       cols="12"
+       sm="6"
+     >
+       <v-text-field
+       outlined
+       :label="this.langkeyword('EMAIL_CONTACT')"
+         required
+       ></v-text-field>
+     </v-col>
+  
+
+     <v-col cols="12">
+       <v-textarea
+       outlined
+       >
+         <template v-slot:label>
+           <div>
+             {{  langkeyword('BODY_CONTACT')}}
+           </div>
+         </template>
+       </v-textarea>
+     </v-col>
+
+
+  
+
+
+       <v-col cols="12">
+           <v-btn block color="primary">
+            {{  langkeyword('SEND')}}
+               <v-icon class="mx-1">mdi mdi-send</v-icon>
+               
+           </v-btn>
+       </v-col>
+
+
+   </v-row>
+
+   </v-col>
+
+   </v-row>  
+
+
+
+
+
 </v-container>
+
+
+
+
+
 
 
 <!-- end product -->

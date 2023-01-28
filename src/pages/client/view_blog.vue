@@ -4,8 +4,11 @@
 
         <v-container class="d-flex justify-space-between">
 
-           <v-btn to="/" flat icon color="primary" >
+           <v-btn v-if="lang()=='en'" to="/" flat icon color="primary" >
             <v-icon>mdi-arrow-left</v-icon>
+           </v-btn>
+           <v-btn v-else to="/" flat icon color="primary" >
+            <v-icon>mdi-arrow-right</v-icon>
            </v-btn>
 
     

@@ -8,8 +8,40 @@
         "rtl":false,
         "dir":"ltr",
         "data":{
-            "APPNAME":"Kalian System",
+
+
+
+
+            "APPNAME":"Ramyar Arsalan",
             "HOME":"Home",
+            "EXPERIENCE":"Experience",
+            "ABOUTME":"About Me",
+            "CONTACT":"Contact",
+            "RAMYAR_NAME":"Ramyar Arsalan",
+            "BASED_IN":"Based In Kurdistan",
+            "IRAQ":"Iraq",
+
+            "BLOG":"Blog",
+            "VIEW_ALL":"View All",
+            "OPEN":"Open",
+
+            "GENERALLY":"Generally",
+            "PERSONALLITY":"Personality",
+            "PRODUCTS":" Products",
+            "THE_CUSTOMERS":"The Customers",
+            "OWNER_SHIP":"Owner Ship",
+            "ABOUT_COMPANY":"About Company",
+            "SERVICE_TYPE":"Service Type",
+            "START_FROM":"Start From",
+            "FINISHED_TO":"Finished To",
+
+            "NAME_CONTACT":"Enter your name",
+            "EMAIL_CONTACT":"Enter your Email Address",
+            "BODY_CONTACT":"Enter your Message",
+
+
+
+
             "USERS":"Users",
             "BLOGS":"blogs",
             "SETTINGS":"Settings",
@@ -132,7 +164,6 @@
             "NEARBY":"Nearby",
             "FAVORITE":"Favorite",
             "FAVORITES":"Favorites",
-            "OPEN":"Open",
             "OPENDIALOG":"Open Dialog",
             "NOTFOUND":"Not Found",
             "LOGIN_WITH_GOOGLE":"Login With Google",
@@ -171,7 +202,6 @@
             "SERVICE":"Service",
             "SERVICES":"Services",
             "PRODUCT":"Product",
-            "PRODUCTS":"Products",
             "PROFIT":"Profit",
             "IQD":"د.ع",
             "USD":"$",
@@ -193,7 +223,6 @@
             "EN_CONTENT":"English Content",
             "SEO":"Seo",
             "CONTACTS":"Contacts",
-            "CONTACT":"Contact",
             "SUBJECT":"Subject",
             "APPEARANCES":"Appearances",
             "SOCIALS":"Socials",
@@ -291,10 +320,46 @@
         "rtl":true,
         "dir":"rtl",
         "data":{
-            "APPNAME":"کەلیان",
+          
+
+
+            "APPNAME":"ڕامیار ئەرسەلان",
             "HOME":"سەرەتا",
+            "EXPERIENCE":"ئەزموون",
+            "ABOUTME":"دەربارەی من",
+            "CONTACT":"پەیوەندی",
+            "RAMYAR_NAME":"ڕامیار ئەرسەلان",
+            "BASED_IN":"نیشتەجێ لە کوردستان",
+            "IRAQ":"عێراق",
+
+            "BLOG":"بلۆگ",
+            "VIEW_ALL":"بینینی هەمووی",
+            "OPEN":"کردنەوە",
+
+            "GENERALLY":"بەگشتی",
+            "PERSONALLITY":"تاکەکەسی",
+            "PRODUCTS":" کاڵاکان",
+            "THE_CUSTOMERS":"کڕیارەکان",
+            "OWNER_SHIP":"خاوەنداریەتی",
+            "ABOUT_COMPANY":"دەربارەی کۆمپانیاکە",
+            "SERVICE_TYPE":"جۆری خزمەتگوزاری",
+            "START_FROM":"دەستیپێکردووە لە",
+            "FINISHED_TO":"تەواو دەبێت بۆ",
+
+            "NAME_CONTACT":"ناوەکەت بنووسە",
+            "EMAIL_CONTACT":"ئیمەیڵەکەت بنووسە",
+            "BODY_CONTACT":"نامەکەت بنووسە",
+
+
+
+
+
+
             "USERS":"بەکارهێنەرەکان",
             "BLOGS":"بابەتەکان",
+
+
+
             "SETTINGS":"ڕێکخستن",
             "COMPONENTS":"کۆمپۆنێنت",
             "LANGUAGE":"زمان",
@@ -415,7 +480,6 @@
             "NEARBY":"نزیکترین",
             "FAVORITE":"دڵخواز",
             "FAVORITES":"دڵخوازەکان",
-            "OPEN":"کردنەوە",
             "OPENDIALOG":"کردنەوەی دایلۆگ",
             "NOTFOUND":"نەدۆزرایەوە",
             "LOGIN_WITH_GOOGLE":"داخڵبوون لەگەڵ گۆگڵ",
@@ -454,7 +518,6 @@
             "SERVICE":"خزمەتگوزاری",
             "SERVICES":"خزمەتگوزاریەکان",
             "PRODUCT":"کاڵا",
-            "PRODUCTS":"کاڵاکان",
             "PROFIT":"قازانج",
             "IQD":"د.ع",
             "USD":"$",
@@ -476,7 +539,6 @@
             "EN_CONTENT":"درێژەی ئینگلیزی",
             "SEO":"سیۆ",
             "CONTACTS":"پەیوەندیەکان",
-            "CONTACT":"پەیوەندی",
             "SUBJECT":"هۆکار",
             "APPEARANCES":"دەرکەوتن",
             "SOCIALS":"سۆشیاڵەکان",
@@ -577,6 +639,41 @@
         "rtl":true,
         "dir":"rtl",
         "data":{
+
+
+
+            "APPNAME":"راميار أرسلان",
+            "HOME":"الصفحة الرئيسية",
+            "EXPERIENCE":"خبرة",
+            "ABOUTME":"عني",
+            "CONTACT":"اتصال",
+            "RAMYAR_NAME":"راميار أرسلان",
+            "BASED_IN":"مقيم في كردستان",
+            "IRAQ":"العراق",
+
+            "BLOG":"المدونات",
+            "VIEW_ALL":"عرض الكل",
+            "OPEN":"افتح",
+
+            "KURDISH":"الكردية",
+            "ARABIC":"العربية",
+            "ENGLISH":"الإنجليزية",
+
+
+            "GENERALLY":"عمومًا",
+            "PERSONALLITY":"الشخصية",
+            "PRODUCTS":"منتجات",
+            "THE_CUSTOMERS":"العملاء",
+            "OWNER_SHIP":"ملكية",
+            "ABOUT_COMPANY":"عن الشركة",
+            "SERVICE_TYPE":"نوع الخدمة",
+            "START_FROM":"يبدأ من",
+            "FINISHED_TO":"انتهى إلى",
+
+            "NAME_CONTACT":"أدخل أسمك",
+            "EMAIL_CONTACT":"أدخل عنوان بريدك الالكتروني",
+            "BODY_CONTACT":"أدخل رسالتك"
+
 
             }
      }

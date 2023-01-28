@@ -5,7 +5,10 @@
   
   <!--       :class="directionLang().dir=='rtl' ? 'v-navigation-drawer--right' : 'v-navigation-drawer--left'" -->
   <!-- mobile drawer -->
+
+
      <v-navigation-drawer
+        v-if="lang()=='en'"
         v-model="mobileDrawer"
         temporary
         app
@@ -16,34 +19,103 @@
 
         <v-list-item link href="#" @click="click_home_drawer()">
           <v-list-item-content>
-            <v-list-item-title>Home</v-list-item-title>
+            <v-list-item-title>{{langkeyword('HOME')}}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
         <v-list-item link href="#" v-scroll-to="'#exp'" @click="mobileDrawer=false">
           <v-list-item-content>
-            <v-list-item-title>Experience</v-list-item-title>
+            <v-list-item-title>{{langkeyword('EXPERIENCE')}}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
         <v-list-item link href="#" v-scroll-to="'#about'" @click="mobileDrawer=false">
           <v-list-item-content>
-            <v-list-item-title>About</v-list-item-title>
+            <v-list-item-title>{{langkeyword('ABOUTME')}}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
         <v-list-item link href="#" v-scroll-to="'#contact'" @click="mobileDrawer=false">
           <v-list-item-content>
-            <v-list-item-title>Contact</v-list-item-title>
+            <v-list-item-title>{{langkeyword('CONTACT')}}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
         <v-list-item >
           <div class=" mt-6">
 
-<v-row class="d-flex  px-3">
-  <h5>Follow Me</h5>
+
+<v-row class="d-flex  px-2" >
+  <a href="https://www.facebook.com/profile.php?id=100007840786454&mibextid=LQQJ4d" style="text-decoration: none;"> <v-icon class="mx-1">mdi-facebook</v-icon></a>
+               <a href="https://youtube.com/@ramyar_group6450" style="text-decoration: none;"> <v-icon class="mx-1">mdi-youtube</v-icon></a>
+               <a href="https://instagram.com/ramyar_arsalan?igshid=NTdlMDg3MTY=" style="text-decoration: none;"> <v-icon class="mx-1">mdi-instagram</v-icon></a>
 </v-row>
+
+</div>
+        </v-list-item>
+
+
+      </v-list>
+
+      
+
+      <!-- <template v-slot:append>
+        <div class="pa-2 mb-4">
+
+           <v-row class="d-flex  px-4">
+             <h5>Follow Me</h5>
+           </v-row>
+          
+          <v-row class="d-flex  px-2" >
+               <a href="#" style="text-decoration: none;"> <v-icon class="mx-1">mdi-facebook</v-icon></a>
+               <a href="#" style="text-decoration: none;"> <v-icon class="mx-1">mdi-youtube</v-icon></a>
+               <a href="#" style="text-decoration: none;"> <v-icon class="mx-1">mdi-instagram</v-icon></a>
+         </v-row>
+
+        </div>
+      </template> -->
+      
+      </v-navigation-drawer>
+
+
+      <!-- for kurdish and arabic  -->
+     <v-navigation-drawer
+        v-else
+        v-model="mobileDrawer"
+        temporary
+        app
+        right
+      >
+       
+      <v-list>
+
+        <v-list-item link href="#" @click="click_home_drawer()">
+          <v-list-item-content>
+            <v-list-item-title>{{langkeyword('HOME')}}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item link href="#" v-scroll-to="'#exp'" @click="mobileDrawer=false">
+          <v-list-item-content>
+            <v-list-item-title>{{langkeyword('EXPERIENCE')}}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item link href="#" v-scroll-to="'#about'" @click="mobileDrawer=false">
+          <v-list-item-content>
+            <v-list-item-title>{{langkeyword('ABOUTME')}}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item link href="#" v-scroll-to="'#contact'" @click="mobileDrawer=false">
+          <v-list-item-content>
+            <v-list-item-title>{{langkeyword('CONTACT')}}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item >
+          <div class=" mt-6">
+
 
 <v-row class="d-flex  px-2" >
   <a href="https://www.facebook.com/profile.php?id=100007840786454&mibextid=LQQJ4d" style="text-decoration: none;"> <v-icon class="mx-1">mdi-facebook</v-icon></a>
@@ -91,19 +163,19 @@
       
 
       <v-btn   :class="{ active: isActive('home') }"  text @click="click_home()"  class="mx-2 text-capitalize">
-           <h3>Home</h3>
+           <h3>{{langkeyword('HOME')}}</h3>
       </v-btn>
 
       <v-btn href="#" v-scroll-to="'#exp'" :class="{ active: isActive('exp') }" @click="setActive('exp')"  text  class="mx-2 text-capitalize">
-           <h3>Experience</h3>
+           <h3>{{langkeyword('EXPERIENCE')}}</h3>
       </v-btn>
 
       <v-btn href="#" v-scroll-to="'#about'" text :class="{ active: isActive('about') }" @click="setActive('about')"  class="mx-2 text-capitalize">
-           <h3>About Me</h3>
+           <h3>{{langkeyword('ABOUTME')}}</h3>
       </v-btn>
 
       <v-btn href="#" v-scroll-to="'#contact'" text :class="{ active: isActive('contact') }" @click="setActive('contact')" class="mx-2 text-capitalize">
-           <h3>Contact</h3>
+           <h3>{{langkeyword('CONTACT')}}</h3>
       </v-btn>
       
     
@@ -146,6 +218,8 @@
               </v-list>
             </v-menu>
 
+              <div class="mx-2"></div>
+
                <a href="https://www.facebook.com/profile.php?id=100007840786454&mibextid=LQQJ4d" style="text-decoration: none;"> <v-icon class="mx-1">mdi-facebook</v-icon></a>
                <a href="https://youtube.com/@ramyar_group6450" style="text-decoration: none;"> <v-icon class="mx-1">mdi-youtube</v-icon></a>
                <a href="https://instagram.com/ramyar_arsalan?igshid=NTdlMDg3MTY=" style="text-decoration: none;"> <v-icon class="mx-1">mdi-instagram</v-icon></a>
@@ -180,6 +254,23 @@
             <v-icon v-if="$vuetify.theme.dark==true" >mdi-white-balance-sunny</v-icon>
         
             </v-btn>
+
+            <v-spacer></v-spacer>
+
+            <v-menu  v-model="lang_menu_mobile" offset-y >
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn class="text-capitalize bg_mode rounded-lg" v-bind="attrs" v-on="on" text>
+                  <v-icon>mdi-web</v-icon>
+                  {{ activeLang }}
+                  <v-icon >mdi-menu-down</v-icon>
+                </v-btn>
+              </template>
+              <v-list dense>
+                <v-list-item link v-for="(lang, index) in langs" :key="index">
+                  <v-list-item-title v-on:click="changeLang(lang.value)">{{ lang.title }}</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-menu>
 
             <v-spacer></v-spacer>
 
@@ -294,21 +385,21 @@
     mounted() {
   
       let updatelangs = [
-        {title:'English',value:'en'},
-        {title:'Kurdish',value:'ku'},
-        {title:'Arabic',value:'ar'}
+        {title:this.langkeyword('ENGLISH'),value:'en'},
+        {title:this.langkeyword('KURDISH'),value:'ku'},
+        {title:this.langkeyword('ARABIC'),value:'ar'}
       ]
       this.langs = updatelangs
      if(this.lang()==='en') {
-     this.activeLang = 'English'
+     this.activeLang = this.langkeyword('ENGLISH')
      this.arrowIcon='mdi-arrow-left'
      }
     if(this.lang()==='ar') {
-     this.activeLang =  'Arabic'
+     this.activeLang =this.langkeyword('ARABIC')
      this.arrowIcon='mdi-arrow-right'
      }
      if(this.lang()==='ku') {
-     this.activeLang =  'Kurdish'
+     this.activeLang =this.langkeyword('KURDISH')
       this.arrowIcon='mdi-arrow-right'
      }
     
