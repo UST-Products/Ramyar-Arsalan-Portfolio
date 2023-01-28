@@ -126,7 +126,26 @@
     <v-spacer></v-spacer>
 
 
+
+
+
          <v-row class="d-flex justify-end px-2" >
+
+          <v-menu  v-model="lang_menu" offset-y >
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn class="text-capitalize bg_mode rounded-lg" v-bind="attrs" v-on="on" text>
+                  <v-icon>mdi-web</v-icon>
+                  {{ activeLang }}
+                  <v-icon >mdi-menu-down</v-icon>
+                </v-btn>
+              </template>
+              <v-list dense>
+                <v-list-item link v-for="(lang, index) in langs" :key="index">
+                  <v-list-item-title v-on:click="changeLang(lang.value)">{{ lang.title }}</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-menu>
+
                <a href="https://www.facebook.com/profile.php?id=100007840786454&mibextid=LQQJ4d" style="text-decoration: none;"> <v-icon class="mx-1">mdi-facebook</v-icon></a>
                <a href="https://youtube.com/@ramyar_group6450" style="text-decoration: none;"> <v-icon class="mx-1">mdi-youtube</v-icon></a>
                <a href="https://instagram.com/ramyar_arsalan?igshid=NTdlMDg3MTY=" style="text-decoration: none;"> <v-icon class="mx-1">mdi-instagram</v-icon></a>
@@ -275,21 +294,21 @@
     mounted() {
   
       let updatelangs = [
-        {title:this.langkeyword('ENGLISH'),value:'en'},
-        {title:this.langkeyword('KURDISH'),value:'ku'},
-        {title:this.langkeyword('ARABIC'),value:'ar'}
+        {title:'English',value:'en'},
+        {title:'Kurdish',value:'ku'},
+        {title:'Arabic',value:'ar'}
       ]
       this.langs = updatelangs
      if(this.lang()==='en') {
-     this.activeLang =  this.langkeyword('ENGLISH')
+     this.activeLang = 'English'
      this.arrowIcon='mdi-arrow-left'
      }
     if(this.lang()==='ar') {
-     this.activeLang =  this.langkeyword('ARABIC')
+     this.activeLang =  'Arabic'
      this.arrowIcon='mdi-arrow-right'
      }
      if(this.lang()==='ku') {
-     this.activeLang =  this.langkeyword('KURDISH')
+     this.activeLang =  'Kurdish'
       this.arrowIcon='mdi-arrow-right'
      }
     
