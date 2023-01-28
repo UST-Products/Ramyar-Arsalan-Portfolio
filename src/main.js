@@ -5,6 +5,8 @@ import store from './store'
 import vuetify from '@/plugins/vuetify' // path to vuetify expor
 import axios from 'axios'
 import VueMeta from 'vue-meta'
+import VueSocialSharing from 'vue-social-sharing'
+
 
 const serverUrl = 'http://localhost/work/app-smartlife' 
 store.state.serverurl = serverUrl
@@ -26,6 +28,8 @@ Vue.use(VueScrollTo, {
     x: false,
     y: true
 })
+
+Vue.use(VueSocialSharing);
 
 Vue.use(VueMeta) 
 new Vue({

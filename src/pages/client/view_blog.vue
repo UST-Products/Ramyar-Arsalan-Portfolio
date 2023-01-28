@@ -2,13 +2,68 @@
     <div class="anotherpageremovepadding">
         <!-- <navbar/> -->
 
-        <v-container>
-         <v-row class="mt-1">
+        <v-container class="d-flex justify-space-between">
+
            <v-btn to="/" flat icon color="primary" >
             <v-icon>mdi-arrow-left</v-icon>
            </v-btn>
-         </v-row>
+
+    
+        
+
+
+           <v-menu
+            bottom
+            left
+          >
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn
+                dark
+                icon
+                v-bind="attrs"
+                v-on="on"
+              >
+                <v-icon class="color-main">mdi-share-variant</v-icon>
+              </v-btn>
+            </template>
+
+ 
+
+            <ShareNetwork
+                v-for="network in networks"
+                :network="network.network"
+                :key="network.network"
+        
+                style="text-decoration: none;"
+                :url="sharing.url"
+                :title="sharing.title"
+                :description="sharing.description"
+                :quote="sharing.quote"
+                :hashtags="sharing.hashtags"
+                :twitterUser="sharing.twitterUser"
+            >
+            <v-list>
+              <v-list-item link>
+               
+                    <v-list-item-icon>
+                        <v-icon>{{network.icon}}</v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-content>
+                        <v-list-item-title>{{ network.name }}</v-list-item-title>
+                    </v-list-item-content>
+
+            </v-list-item>
+            </v-list>
+
+            </ShareNetwork>
+
+  
+          </v-menu>
+ 
          </v-container>
+
+
+         
         
         <v-container>
             <v-row class="d-flex justify-center  pa-5 ">
@@ -66,6 +121,25 @@ import appFooter from "../../layouts/client/footer.vue";
                 widgets: false,
                 category: [],
                 brands: [],
+                sharing: {
+        url: 'https://news.vuejs.org/issues/180',
+        title: 'Say hi to Vite! A brand new, extremely fast development setup for Vue.',
+        description: 'This week, I’d like to introduce you to "Vite", which means "Fast". It’s a brand new development setup created by Evan You.',
+        quote: 'The hot reload is so fast it\'s near instant. - Evan You',
+        hashtags: 'vuejs,vite,javascript',
+        twitterUser: 'youyuxi'
+      },
+                networks: [
+        { network: 'email', name: 'Email', icon: 'mdi-email', color: '#333333' },
+        { network: 'facebook', name: 'Facebook', icon: 'mdi-facebook', color: '#1877f2' },
+        { network: 'messenger', name: 'Messenger', icon: 'mdi-facebook-messenger', color: '#0084ff' },
+        { network: 'linkedin', name: 'LinkedIn', icon: 'mdi-linkedin', color: '#007bb5' },
+        { network: 'telegram', name: 'Telegram', icon: 'mdi-send-circle', color: '#0088cc' },
+        { network: 'viber', name: 'Viber', icon: 'mdi-phone-in-talk', color: '#59267c' },
+        { network: 'whatsapp', name: 'Whatsapp', icon: 'mdi-whatsapp', color: '#25d366' },
+        { network: 'twitter', name: 'Twitter', icon: 'mdi-twitter', color: '#1da1f2' },
+   
+      ],
                 blogs:[
                     {
                         title:'Business Models: 8 Types of Business Models (Plus Examples) | The Blueprint',
