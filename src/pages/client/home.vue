@@ -261,7 +261,7 @@
       </v-col>
 
       <v-col cols="12" lg="6" md="6">
-        <v-expansion-panels accordion v-model="panel" class=" ">
+        <v-expansion-panels accordion v-model="panel" >
               <v-expansion-panel class="bg_mode" >
                 <v-expansion-panel-header style="font-size:20px"> {{langkeyword('GENERALLY')}}</v-expansion-panel-header>
                 <v-expansion-panel-content style="font-size:16px">

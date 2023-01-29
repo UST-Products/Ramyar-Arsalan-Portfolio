@@ -178,12 +178,8 @@
            <h3>{{langkeyword('CONTACT')}}</h3>
       </v-btn>
       
-    
-  
-   <v-spacer></v-spacer>
-  
 
-<v-btn
+      <v-btn
     @click="mode()"
       fab
       small
@@ -194,6 +190,10 @@
      <v-icon v-if="$vuetify.theme.dark==true" >mdi-white-balance-sunny</v-icon>
  
     </v-btn>
+    
+    
+
+
 
     <v-spacer></v-spacer>
 
