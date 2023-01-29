@@ -222,7 +222,7 @@
               <v-col cols="6" lg="6" md="6">
                 <v-img
                 class="mx-auto mb-3 rounded-lg"
-                height="300"
+                height="200"
                   src="../../assets/img/about1.jpg"
                 ></v-img>
                 <v-img
@@ -243,7 +243,7 @@
 
                 <v-img
                 class="mx-auto mb-3 rounded-lg"
-                height="325"
+                height="225"
                   src="../../assets/img/about3.jpg"
                 ></v-img>
 
@@ -264,7 +264,8 @@
         <v-expansion-panels accordion v-model="panel" >
               <v-expansion-panel class="bg_mode" >
                 <v-expansion-panel-header style="font-size:20px"> {{langkeyword('GENERALLY')}}</v-expansion-panel-header>
-                <v-expansion-panel-content style="font-size:16px">
+                <v-expansion-panel-content style="font-size:16px;height:250px">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </v-expansion-panel-content>
               </v-expansion-panel>
