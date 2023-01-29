@@ -672,7 +672,8 @@
 
             "NAME_CONTACT":"أدخل أسمك",
             "EMAIL_CONTACT":"أدخل عنوان بريدك الالكتروني",
-            "BODY_CONTACT":"أدخل رسالتك"
+            "BODY_CONTACT":"أدخل رسالتك",
+            "SEND":"إرسال"
 
 
             }
